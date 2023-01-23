@@ -10,8 +10,7 @@ public class Person
 	
 	public Person()
 	{
-		
-	}
-	
+		System.out.print("test");
+	}	
 }
 
