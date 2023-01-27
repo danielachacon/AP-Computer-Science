@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @author Daniel Achacon
  */
 
-public class Unit1Activity1 
+public class Unit4Activity1 
 {
 	public static void main ( String [] args )
 	{
@@ -40,7 +40,7 @@ public class Unit1Activity1
 			// Grade the answer
 			if ((number1 * number2) == answer) 
 			{
-				System.out.println( "Congratulations… you are correct!" ); 
+				System.out.println( "Congratulationsï¿½ you are correct!" ); 
 				total++;
 			}
 			else

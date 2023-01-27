@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * This class takes in 3 values, displays them, and checks if they form an isosceles, scalene, equilateral, or no triangle
- * @author neilp
+ * @author Daniel Achacon
  *
  */
 

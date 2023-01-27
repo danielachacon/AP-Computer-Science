@@ -2,6 +2,15 @@ package unit4;
 
 import java.util.Scanner;
 
+/**
+ * This class asks the user to input a maximum amount of asterisks printed.
+ * It will then take in the value, then print the maximum amount of asterisks, then
+ * goes to the next line then prints x - 1 amount of asterisks. This repeats until the number
+ * of asterisks is 0.
+ * 
+ * @author Daniel Achacon
+ */
+
 public class Unit4Lab2 {
 
 	public static void main(String[] args) 

@@ -2,6 +2,13 @@ package unit4;
 
 import java.util.Scanner;
 
+/**
+ * This class receives uses a for loop to receive a set of 10 user-input integers 
+ * and then determines the largest and smallest integers. 
+ * 
+ * @author Daniel Achacon
+ */
+
 public class Unit4Lab3B{
 
 	public static void main(String[] args) 

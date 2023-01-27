@@ -2,6 +2,15 @@ package unit4;
 
 import java.util.Scanner;
 
+/**
+ * This class asks a user to guess a number between 1 and a user-input number
+ * with a user-input number of guesses. Then, it takes in user guesses and tells the user
+ * if it is higher, lower, or correct. The user can play until the user specifies that it 
+ * does not want to continue.
+ * 
+ * @author Daniel Achacon
+ */
+
 public class Unit4Lab1 {
 
 	public static void main(String[] args) 
