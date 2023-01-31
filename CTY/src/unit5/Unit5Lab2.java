@@ -2,13 +2,33 @@ package unit5;
 
 import java.util.Scanner;
 
+/**
+ * This class receives a month and year and then prints a calendar template for that month using
+ * static function printMonthCalendar
+ * 
+ * @author Daniel Achacon
+ */
+
 public class Unit5Lab2 //done
 {
+	/**
+	 * @param month
+     * @param year
+     * Prints Month Header and Month Body using static functions printMonthHeader
+     * and printMonthBody
+	 */
+	
 	static void printMonthCalendar(int m, int y)
 	{
 		printMonthHeader(m, y);
 		printMonthBody(m, y);
 	}
+	
+	/**
+	 * @param month
+     * @param year
+     * Prints the Month of the Year's Calendar Header 
+     */
 	
 	static void printMonthHeader(int m, int y)
 	{
@@ -19,10 +39,17 @@ public class Unit5Lab2 //done
 		System.out.println("Sun\tMon\tTue\tWed\tThu\tFri\tSat");
 	}
 	
+	/**
+	 * @param month
+     * @param year
+     * Prints the Month of the Year's Calendar Body
+	 */
+	
 	static void printMonthBody(int m, int y)
 	{
 		int start = getStartDay(m, 1, y); 
 		
+		//Spacing for the Start Day of the Month
 		switch(start)
 		{
 		case 1: System.out.print("\t");
@@ -34,6 +61,7 @@ public class Unit5Lab2 //done
 		case 7: System.out.print(""); break;
 		}
 		
+		//Checks to see if the day needs to go to the next line
 		for(int i = 1; i <= getNumDaysInMonth(m, y); i++)
 		{
 			start++;
@@ -43,6 +71,11 @@ public class Unit5Lab2 //done
 				System.out.print(i + "\t");
 		}
 	}
+	
+	/**
+	 * @param Month 
+     * @return String of the Month's name
+	 */
 	
 	static String getMonthName(int m)
 	{
@@ -77,6 +110,12 @@ public class Unit5Lab2 //done
 		}
 		
 	}
+	/**
+	 * @param Month
+     * @param Day
+     * @param Year
+     * @return Starting day of the month as an integer
+  	 */
 	
 	static int getStartDay(int m, int d, int y)
 	{
@@ -99,6 +138,12 @@ public class Unit5Lab2 //done
 	    return dayNum;
 	}
 	
+	/**
+	 * @param Month
+     * @param Year
+     * @return Number of Days in that specific month
+	 */
+	
 	static int getNumDaysInMonth(int m, int y)
 	{
 		switch(m)
@@ -120,15 +165,20 @@ public class Unit5Lab2 //done
 			return 0;
 		}
 	}
-
+	
+	/**
+	 * @param year
+     * @return True or False if the inputed year is a leap year
+	 */
+	
 	static boolean isLeapYear(int y)
 	{
 		
-		if(y % 4 == 0 && y % 100 != 0)
+		if(y % 4 == 0 && y % 100 != 0)	//Condition 1: Year is divisible by 4 and not divisible by 100
 			return true;
-		else if(y % 100 == 0 && y % 400 == 0 && y % 4 == 0)
+		else if(y % 100 == 0 && y % 400 == 0 && y % 4 == 0)	//Condition 2: Year is divisible by 100, 400, and 4
 			return true;
-		else
+		else	//If either two conditions are not met, then not a leap year
 			return false;
 	}
 
@@ -138,10 +188,10 @@ public class Unit5Lab2 //done
 		int month, year;
 		
 		System.out.print("Enter a month (1-12)" );
-		month = input.nextInt();
+		month = input.nextInt();	//Receives Month value
 		
 		System.out.print("\nEnter a year" );
-		year = input.nextInt();
+		year = input.nextInt();	//Receives Year value
 		
 		printMonthCalendar(month, year);
 	

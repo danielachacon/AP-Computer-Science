@@ -2,17 +2,46 @@ package unit5;
 
 import java.util.Scanner;
 
-public class Unit5Lab1 {	//done
+/**
+ * This class receives a financial function to use, then uses static functions 
+ * futureValueOfASingleSum, presentValueOfASingleSum, and futureValueOfAnAnnuity to calculate
+ * then prints the value out. 
+ * 
+ * The interest compounds monthly and rounds money to the nearest penny
+ * 
+ * @author Daniel Achacon
+ */
 
+public class Unit5Lab1 {	
+
+	/**
+	 * @param p = initial value
+     * @param n = amount of years
+     * @param i = interest rate
+     * @return future value after interest
+	 */
 	static double futureValueOfASingleSum(int p, int n, double i)
 	{
 		return Math.round(p * Math.pow((1 + i/12), n*12) * 100.0)/100.0;
 	}
 	
+	/**
+	 * @param f = future value
+     * @param n = years
+     * @return initial value before interest
+	 */
+	
 	static double presentValueOfASingleSum(int f, int n, double i)
 	{
 		return Math.round(f/Math.pow((1 + i/12),n*12) * 100.0)/100.0;
 	}
+	
+	/**
+	 * @param a = amount monthly deposited
+     * @param n = years
+     * @param i = interest rate
+     * @return Future value of an Annuity
+	 */
 	
 	static double futureValueOfAnAnnuity(int a, int n, double i)
 	{
@@ -32,11 +61,11 @@ public class Unit5Lab1 {	//done
 						   "3. Future Value of an Annuity\n" +
 						   "\nSpecify a financial function: ");
 		
-		x = input.nextInt();
+		x = input.nextInt();	// Receive choice for function
 		
 		System.out.println("Enter interest rate (ex: 5 = 5%): ");
-		i = input.nextDouble()/100;
-		
+		i = input.nextDouble()/100;	// Receive interest rate
+		 
 		switch(x)
 		{
 		case 1:
