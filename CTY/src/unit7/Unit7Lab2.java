@@ -1,7 +1,19 @@
 package unit7;
 
+/**
+ * This class converts a number between different number systems, namely binary, decimal
+ * and hexadecimal using static functions binaryToDecimal, binaryToHex, decimalToBinary,
+ * decimalToHex and tests them.
+ * 
+ * @author Daniel Achacon
+ */
+
 public class Unit7Lab2 {	//done
 	
+	/**
+	 * @param binary number as a string
+     * @return decimal equivalent as an integer
+     */
 	static int binaryToDecimal( String binaryString )
 	{
 		StringBuilder binary = new StringBuilder(binaryString);
@@ -17,12 +29,20 @@ public class Unit7Lab2 {	//done
 		return decimal;
 	}
 	
+	/**
+	 * @param binary number as a string
+     * @return hexadecimal equivalent as a string
+     */
 	static String binaryToHex(String binaryString)
 	{
 		int decimal = binaryToDecimal(binaryString);
 		return decimalToHex(decimal);
 	}
 	
+	/**
+	 * @param decimal number as an integer
+     * @return binary equivalent as a string
+     */
 	static String decimalToBinary(int decimalNumber)
 	{
 		StringBuilder binary = new StringBuilder();
@@ -41,6 +61,10 @@ public class Unit7Lab2 {	//done
 		return answer;
 	}
 	
+	/**
+	 * @param decimal number as an integer
+     * @return hexadecimal equivalent as a string
+     */
 	static String decimalToHex(int decimalNumber)
 	{
 		StringBuilder hex = new StringBuilder();
