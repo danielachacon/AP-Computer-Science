@@ -17,6 +17,7 @@ public class Unit4Lab1 {
 	{
 		//Continues playing the game if true
 		boolean playAgain = true;
+		boolean guessCorrect = false;
 		
 		while(playAgain == true)
 		{
@@ -48,12 +49,14 @@ public class Unit4Lab1 {
 				else if(guess == randomNumber)
 				{
 					System.out.print("\n" + guess + " is correct!");
+					guessCorrect = true;
 					break;
 				}
 				System.out.println("You have used " + i + " attempts. You have " + (maxGuess - i) + " guesses left");
 			}
-		
-
+			
+			if(guessCorrect == false)
+				System.out.print("\n" + randomNumber + " was the correct number");
 			
 			while(true)
 			{
@@ -64,6 +67,7 @@ public class Unit4Lab1 {
 				if(Answer.equals("yes") == true)
 				{
 					playAgain = true;
+					guessCorrect = false;
 					break;
 				}
 				if(Answer.equals("no") == true)
