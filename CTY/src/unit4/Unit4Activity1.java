@@ -40,7 +40,7 @@ public class Unit4Activity1
 			// Grade the answer
 			if ((number1 * number2) == answer) 
 			{
-				System.out.println( "Congratulations� you are correct!" ); 
+				System.out.println( "Congratulations you are correct!" ); 
 				total++;
 			}
 			else
