@@ -1,10 +1,12 @@
 package unit7;
 
 /**
- * This class receives a string and command from the command line and depending on the command, it will use static functions characterCount 
+ * This class receives a string and command from the command line and 
+ * depending on the command, it will use static functions characterCount 
  * and wordCount to count the amount of characters and words in a string respectively.
  * 
- * -[c] will count the characters, -[w] will count the words, [c][w] will count both the words and characters
+ * -[c] will count the characters, -[w] will count the words, 
+ * -[c][w] will count both the words and characters
  * 
  * @author Daniel Achacon
  */
