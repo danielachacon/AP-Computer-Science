@@ -92,7 +92,11 @@ public class Unit7Lab2 {
 	
 	public static void main(String args[])
 	{
-		System.out.print(binaryToHex("11101010"));
+		System.out.println(binaryToHex("11101010"));
+		System.out.println(binaryToDecimal("11101010"));
+		System.out.println(decimalToBinary(234));
+		System.out.println(decimalToHex(234));
+		
 	}
 
 }
