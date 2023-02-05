@@ -8,7 +8,7 @@ package unit7;
  * @author Daniel Achacon
  */
 
-public class Unit7Lab2 {	//done
+public class Unit7Lab2 {	
 	
 	/**
 	 * @param binary number as a string
@@ -49,7 +49,7 @@ public class Unit7Lab2 {	//done
 		int count = 0;
 		while(decimalNumber > 0)
 		{
-			if(count % 4 == 0)
+			if(count % 4 == 0)		//Spacing for formatting Binary into groups of 4 bits
 				binary.append(" ");
 			binary.append(decimalNumber % 2);
 			decimalNumber /= 2;
@@ -90,11 +90,9 @@ public class Unit7Lab2 {	//done
 		return answer;
 	}
 	
-	public static void main(String[] args) 
+	public static void main(String args[])
 	{
 		System.out.print(binaryToHex("11101010"));
-		
-
 	}
 
 }

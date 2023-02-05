@@ -2,11 +2,25 @@ package unit7;
 
 import java.util.Scanner;
 
-public class Unit7Lab3 //done
+/**
+ * This class receives 3 user input words then uses static function sortWords to 
+ * sort the words in alphabetical order and then displays the words in alphabetical
+ * order
+ * 
+ * @author Daniel Achacon
+ */
+
+public class Unit7Lab3 
 {
+	/**
+	 * @param First Word
+	 * @param Second Word
+	 * @param Third Word
+     * @return Array of Strings with the 3 words in alphabetical order
+     */
 	static String[] sortWords(String a, String b, String c)
 	{
-		 String strings[] = new String[] {a.toLowerCase(), b.toLowerCase(), c.toLowerCase()};
+		 String strings[] = new String[] {a.toLowerCase(), b.toLowerCase(), c.toLowerCase()};	
 		 int x, j = 0;
 		 String z;
 		 
@@ -15,11 +29,11 @@ public class Unit7Lab3 //done
 			 z = strings[i];
 			 x = i - 1;
 			 
-			 while(x >= 0 && strings[x].substring(j, j+1).compareTo(z.substring(j, j+1)) >= 0)
-			 {
-				 if(strings[x].substring(j, j+1).compareTo(z.substring(j, j+1)) == 0)
+			 while(x >= 0 && strings[x].substring(j, j+1).compareTo(z.substring(j, j+1)) >= 0)		// While the second string's first character >= first string's first character 
+			 {	 																					//(array potentially is not in alphabetical order)
+				 if(strings[x].substring(j, j+1).compareTo(z.substring(j, j+1)) == 0)	//If the same, Move to next character
 					 j++;
-				 else if(strings[x].substring(j, j+1).compareTo(z.substring(j, j+1)) > 0)
+				 else if(strings[x].substring(j, j+1).compareTo(z.substring(j, j+1)) > 0) // If not equal, then switch the position of the Strings so that they are in alphabetical order
 				 {
 					 strings[x + 1] = strings[x];
 					 x--;
