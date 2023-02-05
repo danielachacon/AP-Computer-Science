@@ -47,13 +47,13 @@ public class StringCount {
 			System.out.print("ERROR\n\nPlease input as: StringCount -[c][w] user_string \n");
 		
 		else if(args[0].equals("StringCount") && args[1].equals("-[c]"))						//Checks if input from command line reads ONLY [c]
-			System.out.print(" Word Count is: " + characterCount(args[2].toLowerCase()));
+			System.out.print("String is: " + args[2] + "\nWord Count is: " + characterCount(args[2].toLowerCase()));
 		
 		else if(args[0].equals("StringCount") && args[1].equals("-[w]"))						//Checks if input from command line reads ONLY [w]
-			System.out.print("Character Count is: " + wordCount(args[2].toLowerCase()));
+			System.out.print("String is: " + args[2] + "\nCharacter Count is: " + wordCount(args[2].toLowerCase()));
 		
 		else if(args[0].equals("StringCount") && args[1].equals("-[c][w]"))						//Checks if input from command line reads ONLY [c][w]
-			System.out.print("Character Count is: " + characterCount(args[2].toLowerCase())
+			System.out.print("String is: " + args[2] + "\nCharacter Count is: " + characterCount(args[2].toLowerCase())
 							 + "\nWord Count is: " + wordCount(args[2].toLowerCase()));
 		else
 			System.out.print("ERROR\n\nPlease input as: StringCount -[c][w] user_string \n");
