@@ -92,10 +92,10 @@ public class Unit7Lab2 {
 	
 	public static void main(String args[])
 	{
-		System.out.println(binaryToHex("11101010"));
-		System.out.println(binaryToDecimal("11101010"));
-		System.out.println(decimalToBinary(234));
-		System.out.println(decimalToHex(234));
+		System.out.println("1110 1010 in hexadecimal is " + binaryToHex("11101010"));
+		System.out.println("1110 1010 in decimal is " + binaryToDecimal("11101010"));
+		System.out.println("234 in binary is " + decimalToBinary(234));
+		System.out.println("234 in hexadecimal is " + decimalToHex(234));
 		
 	}
 
