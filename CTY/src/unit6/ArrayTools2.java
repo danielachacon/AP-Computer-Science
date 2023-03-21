@@ -1,9 +1,7 @@
 package unit6;
-
 import java.util.Arrays;
-
-public class ArrayTools {	//Check
-	
+public class ArrayTools2 
+{
 	public static char minimum(char array[])
 	{
 		char minimum = array[0];
@@ -87,10 +85,10 @@ public class ArrayTools {	//Check
 	/*__________________________________________________________*/
 	
 	
-	public static int minimumAt(char array[])
+	public static char minimumAt(char array[])
 	{
 		char minimum = array[0];
-		int place = 0;
+		char place = 0;
 		
 		for(int i = 1; i < array.length; i++) 
 		{
@@ -121,10 +119,10 @@ public class ArrayTools {	//Check
 		return place;
 	}
 	
-	public static int minimumAt(double array[])
+	public static double minimumAt(double array[])
 	{
 		double minimum = array[0];
-		int place = 0;
+		double place = 0;
 		
 		for(int i = 1; i < array.length; i++) 
 		{
@@ -140,27 +138,27 @@ public class ArrayTools {	//Check
 
 	/*__________________________________________________________*/
 	
-	public static int maximumAt(char array[])
+	public static char maximumAt(char array[])
 	{
 		char maximum = 0;
-		int place = 0;
+		char place = 0;
 		
 		for(int i = 0; i < array.length; i++) 
 		{
 			if(array[i] > maximum)
 			{
 				maximum = array[i];
-				place = i;
+				place = (char) i;
 			}
 		}
 		
 		return place;
 	}
 	
-	public static int maximumAt(double array[])
+	public static double maximumAt(double array[])
 	{
 		double maximum = 0;
-		int place = 0;
+		double place = 0;
 		
 		for(int i = 0; i < array.length; i++) 
 		{
@@ -196,7 +194,7 @@ public class ArrayTools {	//Check
 	
 	public static double average(int array[])
 	{
-		double average = 0;
+		int average = 0;
 		
 		for(int i = 0; i < array.length; i++) 
 			average += array[i];
@@ -213,4 +211,69 @@ public class ArrayTools {	//Check
 		
 		return average / array.length;
 	}
+	
+	/*__________________________________________________________*/
+	
+	public boolean equals( char a1[], char a2[] )
+	{
+		if(Arrays.equals(a1,a2)  == true)
+			return true;
+		else
+			return false;
+	}
+	public boolean equals( int a1[], int a2[] )
+	{
+		if(Arrays.equals(a1,a2)  == true)
+			return true;
+		else
+			return false;
+	}
+	public boolean equals( double a1[], double a2[] )
+	{
+		if(Arrays.equals(a1,a2)  == true)
+			return true;
+		else
+			return false;
+	}
+	
+	/*__________________________________________________________*/
+	
+	public int find(char array[], char key)
+	{
+		return Arrays.binarySearch(array,key);
+		
+	}
+	
+	public int find(int array[], int key)
+	{
+		return Arrays.binarySearch(array,key);
+	}
+	
+	public int find(double array[], double key)
+	{
+		return Arrays.binarySearch(array,key);
+	}
+	/*__________________________________________________________*/
+	
+	public char[] sort(char array[])
+	{
+		Arrays.sort(array);
+		return array;
+	}
+	
+	public int[] sort( int array[] )
+	{
+		Arrays.sort(array);
+		return array;
+	}
+	
+	public double[] sort( double array[] )
+	{
+		Arrays.sort(array);
+		return array;
+	}
+	/*__________________________________________________________*/
+
+
+
 }
