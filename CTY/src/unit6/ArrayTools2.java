@@ -344,10 +344,17 @@ public class ArrayTools2
 	 * @param array of characters
 	 * @param character key to search for in element
 	 * @return position of the key element in array, returns negative value if none
+	 * 
+	 * Note: Binary Search does not work because binary search requires a sorted array
 	 */
 	public static int find(char array[], char key)
 	{
-		return Arrays.binarySearch(array,key);	//Calls Arrays.binarysearch method to find the position of the key in the array
+		for(int i = 0; i < array.length; i++)	//Traverses through each element the array
+		{
+			if(array[i] == key)	//If key is in the array, return its position
+				return i;
+		}
+		return -1;
 		
 	}
 	
@@ -360,7 +367,12 @@ public class ArrayTools2
 	 */
 	public static int find(int array[], int key)
 	{
-		return Arrays.binarySearch(array,key);
+		for(int i = 0; i < array.length; i++)	//Traverses through each element the array
+		{
+			if(array[i] == key)	//If key is in the array, return its position
+				return i;
+		}
+		return -1;
 	}
 	
 	/**
@@ -372,7 +384,12 @@ public class ArrayTools2
 	 */
 	public static int find(double array[], double key)
 	{
-		return Arrays.binarySearch(array,key);
+		for(int i = 0; i < array.length; i++)	//Traverses through each element the array
+		{
+			if(array[i] == key)	//If key is in the array, return its position
+				return i;
+		}
+		return -1;
 	}
 	/*__________________________________________________________*/
 	/**

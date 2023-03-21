@@ -13,6 +13,9 @@ public class ArrayToolsTest2
 		
 		System.out.println("Equals Itself?: " + ArrayTools2.equals(charArray, charArray) + ", " + ArrayTools2.equals(intArray, intArray) + ", " + ArrayTools2.equals(doubleArray,doubleArray));
 		System.out.println("Equals Other?: " + ArrayTools2.equals(charArray, charArray2) + ", " + ArrayTools2.equals(intArray, intArray2) + ", " + ArrayTools2.equals(doubleArray,doubleArray2));
+		
+
+		
 		System.out.println("Find: " + ArrayTools2.find(charArray, 'a') + ", " + ArrayTools2.find(intArray, 5) + ", " + ArrayTools2.find(doubleArray,2.2));
 		System.out.println("Find (not in array value): " + ArrayTools2.find(charArray, 'z') + ", " + ArrayTools2.find(intArray, 122) + ", " + ArrayTools2.find(doubleArray,12));
 		
