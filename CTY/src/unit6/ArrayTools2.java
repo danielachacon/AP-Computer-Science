@@ -303,7 +303,7 @@ public class ArrayTools2
 	 * @param array of characters
 	 * @return boolean (TRUE/FALSE) for if the two arrays are equal to each other
 	 */
-	public boolean equals( char a1[], char a2[] )
+	public static boolean equals( char a1[], char a2[] )
 	{
 		if(Arrays.equals(a1,a2)  == true)		//Calls Arrays.equals method which compares the two arrays and sees if they are equal. If they are, return true. If not, return false.
 			return true;
@@ -317,7 +317,7 @@ public class ArrayTools2
 	 * 
 	 * Uses same logic as method above
 	 */
-	public boolean equals( int a1[], int a2[] )
+	public static boolean equals( int a1[], int a2[] )
 	{
 		if(Arrays.equals(a1,a2)  == true)
 			return true;
@@ -331,7 +331,7 @@ public class ArrayTools2
 	 * 
 	 * Uses same logic as method above
 	 */
-	public boolean equals( double a1[], double a2[] )
+	public static boolean equals( double a1[], double a2[] )
 	{
 		if(Arrays.equals(a1,a2)  == true)
 			return true;
@@ -345,7 +345,7 @@ public class ArrayTools2
 	 * @param character key to search for in element
 	 * @return position of the key element in array, returns negative value if none
 	 */
-	public int find(char array[], char key)
+	public static int find(char array[], char key)
 	{
 		return Arrays.binarySearch(array,key);	//Calls Arrays.binarysearch method to find the position of the key in the array
 		
@@ -358,7 +358,7 @@ public class ArrayTools2
 	 * 
 	 * Uses same logic as method above
 	 */
-	public int find(int array[], int key)
+	public static int find(int array[], int key)
 	{
 		return Arrays.binarySearch(array,key);
 	}
@@ -370,7 +370,7 @@ public class ArrayTools2
 	 * 
 	 * Uses same logic as method above
 	 */
-	public int find(double array[], double key)
+	public static int find(double array[], double key)
 	{
 		return Arrays.binarySearch(array,key);
 	}
@@ -379,7 +379,7 @@ public class ArrayTools2
 	 * @param array of characters
 	 * @return array of characters sorted in ascending order
 	 */
-	public char[] sort(char array[])
+	public static char[] sort(char array[])
 	{
 		Arrays.sort(array);	//Calls Arrays.sort method to sort array in ascending order then returns the array
 		return array;
@@ -391,7 +391,7 @@ public class ArrayTools2
 	 * 
 	 * Uses same logic as method above
 	 */
-	public int[] sort( int array[] )
+	public static int[] sort( int array[] )
 	{
 		Arrays.sort(array);
 		return array;
@@ -403,7 +403,7 @@ public class ArrayTools2
 	 * 
 	 * Uses same logic as method above
 	 */
-	public double[] sort( double array[] )
+	public static double[] sort( double array[] )
 	{
 		Arrays.sort(array);
 		return array;

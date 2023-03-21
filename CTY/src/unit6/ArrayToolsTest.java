@@ -12,6 +12,6 @@ public class ArrayToolsTest
 		System.out.println("Maximum: " + ArrayTools.maximum(charArray) + ", " + ArrayTools.maximum(intArray) + ", " + ArrayTools.maximum(doubleArray));
 		System.out.println("Minimum at: " + ArrayTools.minimumAt(charArray) + ", " + ArrayTools.minimumAt(intArray) + ", " + ArrayTools.minimumAt(doubleArray));
 		System.out.println("Maximum at: " + ArrayTools.maximumAt(charArray) + ", " + ArrayTools.maximumAt(intArray) + ", " + ArrayTools.maximumAt(doubleArray));
-		System.out.println("average: " + ArrayTools.average(intArray) + ", " + ArrayTools.average(doubleArray));
+		System.out.println("Average: " + ArrayTools.average(intArray) + ", " + ArrayTools.average(doubleArray));
 	}
 }
