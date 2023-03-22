@@ -6,7 +6,7 @@ package unit8;
  * It contains methods that set the time, get the time, hour, minute, and second,
  * and returns Strings that show the time in standardized format.  
  * 
- * @author danielachaocn
+ * @author danielachacon
  */
 public class Time2 
 {
