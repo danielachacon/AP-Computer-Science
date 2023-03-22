@@ -1,6 +1,6 @@
 package unit9;
 
-public class Unit9Activity1 {
+public class DateExercise {
 
 	public static void main(String[] args) 
 	{

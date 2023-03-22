@@ -37,7 +37,5 @@ public class Date
 	public void displayDate()
 	{
 		JOptionPane.showMessageDialog( null, "The date is" + month + "/" + day + "/" + year);
-
-
 	}
 }
