@@ -1,6 +1,6 @@
 package unit8;
 
-public class TestRectangle	//done 
+public class TestRectangle	
 {
 	public static void main(String[] args) 
 	{
