@@ -1,6 +1,6 @@
 package unit8;
 
-public class Song //Finish with UMLet
+public class Song 
 {
 	private String name;
 	private String recordingArtist;
