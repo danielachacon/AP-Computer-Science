@@ -2,6 +2,11 @@ package unit9;
 
 import javax.swing.*;
 
+/**
+ * This class models the date of the year and has methods that can create dialog boxes that display the date in mm/dd/yyyy format
+ * @author Daniel Achacon
+ */
+
 public class Date 
 {
 	private int day;
