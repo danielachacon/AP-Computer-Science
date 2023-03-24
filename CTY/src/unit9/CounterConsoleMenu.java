@@ -4,6 +4,7 @@ public class CounterConsoleMenu
 {
 	private boolean quit;
 	private String s;
+	Counter counter;
 	
 	public void displayMenu()
 	{
@@ -17,26 +18,26 @@ public class CounterConsoleMenu
 		return s;
 	}
 	
-	public void displayCurrentCountValue(Counter counter)
+	public void displayCurrentCountValue()
 	{
-		System.out.println("Value is: "  + counter.getCount());
+		System.out.println("Value is: "  + this.counter.getCount());
 	}
 	
-	public void increment(Counter counter)
+	public void increment()
 	{
-		counter.increment();
+		this.counter.increment();
 		System.out.println("done");
 	}
 	
-	public void decrement(Counter counter)
+	public void decrement()
 	{
-		counter.decrement();
+		this.counter.decrement();
 		System.out.println("done");
 	}
 	
-	public void reset(Counter counter)
+	public void reset()
 	{
-		counter.reset();
+		this.counter.reset();
 		System.out.println("done");
 	}
 	
@@ -45,7 +46,7 @@ public class CounterConsoleMenu
 		quit = true;
 	}
 	
-	public void run(Counter counter)
+	public void run()
 	{
 		quit = false;
 		System.out.println("Welcome to the Counter Console Menu\n");
@@ -54,17 +55,17 @@ public class CounterConsoleMenu
 		{
 			s = getUserInput().toLowerCase();
 			if(s.equals("increment") == true)
-				increment(counter);
+				increment();
 			else if(s.equals("decrement") == true)
-				decrement(counter);
+				decrement();
 			else if(s.equals("reset") == true)
-				reset(counter);
+				reset();
 			else if(s.equals("quit") == true)
 				quit();
 			else if(s.equals("menu") == true)
 				displayMenu();
 			else if(s.equals("value") == true)
-				displayCurrentCountValue(counter);
+				displayCurrentCountValue();
 			else
 				System.out.print("ERROR: User input not recognized");
 		}
@@ -72,7 +73,12 @@ public class CounterConsoleMenu
 	
 	public CounterConsoleMenu()
 	{
-		
+		this.counter = new Counter();
+	}
+	
+	public CounterConsoleMenu(Counter counter)
+	{
+		this.counter = counter;
 	}
 
 	
