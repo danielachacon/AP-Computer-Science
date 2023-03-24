@@ -4,7 +4,7 @@ public class CounterConsoleMenu
 {
 	private boolean quit;
 	private String s;
-	Counter counter;
+	private Counter counter;
 	
 	/**
 	 * Displays User Choices 
@@ -34,7 +34,7 @@ public class CounterConsoleMenu
 	}
 	
 	/**
-	 * Calls method increment in counter to add 1 to the current counter 
+	 * Calls method increment in Counter to add 1 to the current counter 
 	 */
 	private void increment()
 	{
@@ -43,7 +43,7 @@ public class CounterConsoleMenu
 	}
 	
 	/**
-	 * Calls method decrement in counter to subtract 1 to the current counter 
+	 * Calls method decrement in Counter to subtract 1 to the current counter 
 	 */
 	private void decrement()
 	{
@@ -52,7 +52,7 @@ public class CounterConsoleMenu
 	}
 	
 	/**
-	 * Calls method reset in counter to set the current counter to 0
+	 * Calls method reset in Counter to set the current counter to 0
 	 */
 	private void reset()
 	{
