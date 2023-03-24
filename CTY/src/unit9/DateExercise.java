@@ -6,8 +6,8 @@ public class DateExercise {
 	{
 		Date date = new Date();
 		
-		date.setDay(Input.getInt("Enter Day: "));
 		date.setMonth(Input.getInt("Enter Month: "));
+		date.setDay(Input.getInt("Enter Day: "));
 		date.setyear(Input.getInt("Enter Year: "));
 		
 		date.displayDate();
