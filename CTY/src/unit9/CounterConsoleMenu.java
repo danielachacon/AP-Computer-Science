@@ -8,7 +8,7 @@ public class CounterConsoleMenu
 	
 	public void displayMenu()
 	{
-		System.out.print("Choices: \nMenu\nValue\nIncrement\nDecrement\nReset\nQuit\n");
+		System.out.print("Choices: Menu, Value, Increment, Decrement, Reset, Quit\n");
 	}
 	
 	public String getUserInput()
