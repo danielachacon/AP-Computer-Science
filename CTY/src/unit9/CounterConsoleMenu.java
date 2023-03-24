@@ -6,42 +6,42 @@ public class CounterConsoleMenu
 	private String s;
 	Counter counter;
 	
-	public void displayMenu()
+	private void displayMenu()
 	{
 		System.out.print("Choices: Menu, Value, Increment, Decrement, Reset, Quit\n");
 	}
 	
-	public String getUserInput()
+	private String getUserInput()
 	{
 		Scanner input = new Scanner(System.in);
 		s = input.next();
 		return s;
 	}
 	
-	public void displayCurrentCountValue()
+	private void displayCurrentCountValue()
 	{
 		System.out.println("Value is: "  + this.counter.getCount());
 	}
 	
-	public void increment()
+	private void increment()
 	{
 		this.counter.increment();
 		System.out.println("done");
 	}
 	
-	public void decrement()
+	private void decrement()
 	{
 		this.counter.decrement();
 		System.out.println("done");
 	}
 	
-	public void reset()
+	private void reset()
 	{
 		this.counter.reset();
 		System.out.println("done");
 	}
 	
-	public void quit()
+	private void quit()
 	{
 		quit = true;
 	}

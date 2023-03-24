@@ -28,4 +28,9 @@ public class Counter
 	{
 		count = 0;
 	}
+	
+	public Counter(int count)
+	{
+		this.count = count;
+	}
 }
