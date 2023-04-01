@@ -8,8 +8,8 @@ package unit10;
  */
 public class Employee extends Person 
 {
-	private double salary;
-	private Date hireDate = new Date();
+	protected double salary;
+	protected Date hireDate = new Date();
 	
 	/**
 	 * @return name of the class and name as a string
