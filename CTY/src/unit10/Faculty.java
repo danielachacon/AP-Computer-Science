@@ -91,7 +91,7 @@ public class Faculty extends Employee
 	 * @param OfficeHours
 	 * @param rank
 	 */
-	public Faculty(String name, String emailAddress, String phoneNumber, Date BirthDate, double salary, Date hireDate, String OfficeHours, String rank)
+	public Faculty(String name, String emailAddress, String phoneNumber, Date BirthDate, double salary, Date hireDate, String officeHours, String rank)
 	{
 		super(name,emailAddress, phoneNumber, BirthDate, salary, hireDate);
 		this.officeHours = officeHours;
