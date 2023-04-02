@@ -7,7 +7,7 @@ public class MemoryCounter extends Counter
 	
 	/**
 	 * @return count
-	 * Gives user current value of count
+	 * Gives user current value of memory
 	 */
 	public int getMemoryCount()
 	{

@@ -2,7 +2,6 @@ package unit10;
 
 import java.util.Scanner;
 
-import unit9.Counter;
 
 public class MemoryCounterConsoleMenu 
 {
@@ -30,7 +29,7 @@ public class MemoryCounterConsoleMenu
 	}
 	
 	/**
-	 * Displays the current value of count 
+	 * Displays the current value of count and current value of memory
 	 */
 	private void displayCurrentCountValue()
 	{
@@ -48,7 +47,7 @@ public class MemoryCounterConsoleMenu
 	}
 	
 	/**
-	 * Calls method addMemory in MemoryCounter to add count to memory
+	 * Calls method resetMemory in MemoryCounter to set memory to 0
 	 */
 	private void resetMemory()
 	{
