@@ -1,4 +1,4 @@
-package unit10;
+package unit10.lab1;
 
 /**
  * This class models a faculty, whose traits are inherited by the employee Class.

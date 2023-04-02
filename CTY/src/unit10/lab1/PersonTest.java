@@ -1,4 +1,4 @@
-package unit10;
+package unit10.lab1;
 
 public class PersonTest {
 

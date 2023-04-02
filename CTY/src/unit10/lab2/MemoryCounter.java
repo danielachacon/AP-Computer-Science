@@ -1,4 +1,4 @@
-package unit10;
+package unit10.lab2;
 
 
 public class MemoryCounter extends Counter

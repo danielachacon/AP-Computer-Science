@@ -1,4 +1,5 @@
-package unit10;
+package unit10.lab1;
+
 /**
  * This class models a person
  * This class has a name, address, email address, phone number, and birth date

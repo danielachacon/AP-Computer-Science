@@ -1,4 +1,4 @@
-package unit10;
+package unit10.lab3;
 
 public class MyPublisher extends Publisher
 {

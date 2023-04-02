@@ -1,4 +1,5 @@
-package unit10;
+package unit10.lab1;
+
 /**
  * This class models a student, whose traits are inherited by the person Class.
  * This class has a class Status along with their Person traits
