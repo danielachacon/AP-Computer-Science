@@ -27,6 +27,6 @@ public class Publisher
 	{
 		// Iterate through the subscriber array & invoke update() methods
 		for ( int i = 0; i < nextIndex; i++ )
-			subscriberList[ i ].update();
+			subscriberList[ i ].update(i + 1);
 	}
 }
