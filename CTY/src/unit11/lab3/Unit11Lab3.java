@@ -29,7 +29,7 @@ public class Unit11Lab3
 	 */
 	public static double calculateAverage(ArrayList<Pet> list)
 	{
-		int sum = 0;
+		double sum = 0;
 		
 		for(int i = 0; i < list.size(); i++)
 			sum += list.get(i).getAge();	// goes through list and adds the age to sum
