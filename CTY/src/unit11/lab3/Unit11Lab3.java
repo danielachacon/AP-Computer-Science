@@ -3,8 +3,14 @@ package unit11.lab3;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import unit10.lab4.PetTest;
-
+/**
+ * This class prompts the user to enter data (name, weight, age)  for several Dog and Cat objects and stores the objects in an array list. 
+ * It displays the attributes for each object in the list, and then calculates and displays the average age of all pets in the list using
+ * the calculateAverage method
+ * 
+ * @author Daniel Achacon
+ *
+ */
 public class Unit11Lab3 
 {
 	/**
@@ -56,11 +62,11 @@ public class Unit11Lab3
 			}
 			
 			System.out.print("Enter Name of Pet: ");
-			petList.get(i).setName(PetTest.getUserInput());	//Receive User Input of Name and stores it into current element of the array
+			petList.get(i).setName(getUserInput());	//Receive User Input of Name and stores it into current element of the array
 			System.out.print("Enter Weight of Pet: ");
-			petList.get(i).setWeight(Integer.parseInt(PetTest.getUserInput()));	//Receive User Input of Weight and stores it into current element of the array
+			petList.get(i).setWeight(Integer.parseInt(getUserInput()));	//Receive User Input of Weight and stores it into current element of the array
 			System.out.print("Enter Age of Pet: ");
-			petList.get(i).setAge(Integer.parseInt(PetTest.getUserInput()));	//Receive User Input of Age and stores it into current element of the array
+			petList.get(i).setAge(Integer.parseInt(getUserInput()));	//Receive User Input of Age and stores it into current element of the array
 			
 			System.out.println();
 		}
