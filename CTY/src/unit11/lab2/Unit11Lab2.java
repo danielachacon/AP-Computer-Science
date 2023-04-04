@@ -28,7 +28,7 @@ public class Unit11Lab2
 		
 		list.add(1);
 		list.add(4);
-		list.add(3);
+		list.add(5);
 		list.add(4);
 		list.add(5);
 		list.add(4);
@@ -37,13 +37,16 @@ public class Unit11Lab2
 		list.add(1);
 		list.add(10);
 		
+		System.out.println("Original List");
+		for(int i = 0; i < list.size(); i++)
+			System.out.println(list.get(i));
+		
 		removeDuplicates(list);
 		
+		System.out.println("\nFinal List Without Duplicates");
 		for(int i = 0; i < list.size(); i++)
-		{
 			System.out.println(list.get(i));
-		}
-		
+	
 	}
 
 }
