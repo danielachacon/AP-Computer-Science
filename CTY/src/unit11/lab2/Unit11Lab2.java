@@ -3,9 +3,16 @@ package unit11.lab2;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+/**
+ * This class contains a method that removes the duplicates in an ArrayList of integers
+ * @author Daniel Achacon
+ *
+ */
 public class Unit11Lab2 
 {
-	
+	/**
+	 * @param list
+	 */
 	public static void removeDuplicates(ArrayList<Integer> list)
 	{
 		HashMap<Integer, Integer> DuplicateCheck = new HashMap<Integer, Integer>();
