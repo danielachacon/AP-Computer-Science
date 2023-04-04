@@ -8,7 +8,7 @@ public class PetTest
 	 * @return s
 	 * Reads User input and stores it into s 
 	 */
-	private static String getUserInput()
+	public static String getUserInput()
 	{
 		Scanner input = new Scanner(System.in); 
 		return input.next();
