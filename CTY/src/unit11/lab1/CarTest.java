@@ -31,7 +31,7 @@ public class CarTest {
 			Cars.get(i).setYear(Integer.parseInt(input.nextLine()));	//Receives year user input
 		}
 		
-		//Receives year user input
+		//Iterates through Car ArrayList and checks the year attribute
 		for(int i = 0; i < amountOfCars; i++)
 		{
 			if(Cars.get(i).getYear() >= 2010)	//If the year attribute of the Car greater than or equal to 2010, then add it to NewCar Arraylist
