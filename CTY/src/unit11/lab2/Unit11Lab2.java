@@ -11,14 +11,14 @@ public class Unit11Lab2
 		HashMap<Integer, Integer> DuplicateCheck = new HashMap<Integer, Integer>();
 		int i = 0;
 		
-		while(i < list.size())
+		while(i < list.size())	//Iterates until (including) the last element
 		{
-			if(DuplicateCheck.containsKey(list.get(i)))
+			if(DuplicateCheck.containsKey(list.get(i)))	//If the hash map has a key for the current int in list then remove it (key exist = already appeared in the ArrayList)
 				list.remove(i);
-			else
+			else	//If the hash map does not have a key, this is the first time the int has appeared in the ArrayList
 			{
-				DuplicateCheck.put(list.get(i), 1);
-				i++;
+				DuplicateCheck.put(list.get(i), 1);	//Creates a Key and sets the value to 1
+				i++;	//Goes to the next unchecked element of the Array List
 			}
 		}
 	}
@@ -37,12 +37,14 @@ public class Unit11Lab2
 		list.add(1);
 		list.add(10);
 		
+		//Display Original List
 		System.out.println("Original List");
 		for(int i = 0; i < list.size(); i++)
 			System.out.println(list.get(i));
 		
 		removeDuplicates(list);
 		
+		//Display list without duplicates
 		System.out.println("\nFinal List Without Duplicates");
 		for(int i = 0; i < list.size(); i++)
 			System.out.println(list.get(i));
