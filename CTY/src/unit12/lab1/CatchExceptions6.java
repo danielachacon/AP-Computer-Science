@@ -1,6 +1,6 @@
 package unit12.lab1;
 
-import unit9.Input;
+import java.util.Scanner;
 
 public class CatchExceptions6 
 {
@@ -20,23 +20,30 @@ public class CatchExceptions6
 	
 	public static void main(String[] args)
 	{
-		System.out.println();
-		try
-		{
-			divide(10,0);
-		}
-		catch(DivideByZeroException e)
+		int numerator;
+		int denominator;
+		int quotient = 0;
+		Boolean success = false;
+		Scanner input = new Scanner(System.in); 
+	
+		
+		while(success == false)
 		{
 			try
 			{
-				int n = Input.getInt("Denominator must be nonzero... enter again");
-				divide(10,n);
+				System.out.print("Enter numerator: ");
+				numerator = input.nextInt();
+				System.out.print("Enter denominator: ");
+				denominator = input.nextInt();
+				quotient = divide(numerator,denominator);
+				success = true;
 			}
-			catch(DivideByZeroException ex)
+			catch(DivideByZeroException e)
 			{
-				System.out.println("Sorry... You had your chance");
+				System.out.print("Denominator must be nonzero... enter again\n");
 			}
 		}
+		System.out.print("Quotient is: " + quotient);
 	}
 
 }
