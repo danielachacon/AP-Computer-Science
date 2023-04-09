@@ -10,6 +10,8 @@ public class BubbleSort
 	/**
 	 * Preconditions: array is any array of integers
 	 * Postconditions: array will be sorted by increasing value
+	 * 
+	 * Bubble sort is O(n^2) because at worst case scenario, the inner loop does O(n) work on each iteration and the outer loop runs for O(n) iterations, making the total work O(n^2)
 	 * @param array
 	 */
 	static void bubbleSort(int[] array)
