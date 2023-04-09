@@ -27,7 +27,7 @@ public class Palindrome
 	/***
 	 * Palindromes are words that are the same forwards and backwards
 	 * This method starts from the first and last index and iterates towards the opposite ends of the array 
-	 * and every iteration it sees if the array holds the same character
+	 * and every iteration it sees if the pair of indexes holds the same character
 	 * 
 	 * Preconditions: letters of the alphabet must be lowercase and i must start at 0 and will always be >= 0
 	 * Postconditions: Will always return true or false, i will always be less than c.length
@@ -37,7 +37,7 @@ public class Palindrome
 	 */
 	public static Boolean testPalindrome(char[] c, int i)
 	{
-		if(i >= c.length - (i + 1))	//If the indexes are the same or past each other, then they have already been checked so it is a palindrome
+		if(i >= c.length - (i + 1))	//If the indexes are the same or past each other, then the pair of indexes have already been checked and are the same so it is a palindrome
 			 return true;
 		else if(c[i] != c[c.length - (i + 1)])	//If the character at the two indexes don't match up, then the String cannot be a palindrome
 			return false;
