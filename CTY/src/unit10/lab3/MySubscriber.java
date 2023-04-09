@@ -2,8 +2,16 @@ package unit10.lab3;
 
 public class MySubscriber extends Subscriber
 {
-	public void update(int i)
+	int subscriberInstance;
+	
+	public MySubscriber(int subscriberInstance)
 	{
-		System.out.println( "Subscriber " + i + " has been notified of state change" );
+		this.subscriberInstance = subscriberInstance;
 	}
-}
+
+	public void update()
+	{
+		System.out.println( "Subscriber " + subscriberInstance + " has been notified." );
+	} 
+}	
+

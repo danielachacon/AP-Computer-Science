@@ -1,6 +1,6 @@
 package unit10.lab3;
 
-public class Publisher 
+public class Publisher
 {
 	private Subscriber [] subscriberList;   // An array stores subscribers
 	private int maximumSubscribers;   // Maximum number of subscribers
@@ -26,15 +26,9 @@ public class Publisher
 	public void notifySubscribers()
 	{
 		// Iterate through the subscriber array & invoke update() methods
-		if(nextIndex < 3)
-		{
-			for ( int i = 0; i < nextIndex; i++ )
-				subscriberList[ i ].update(i + 1);
-		}
-		else
-		{
-			for(int i = 0; i < 3; i++)
-				subscriberList[ i ].update(i + 1);
-		}
+		for ( int i = 0; i < nextIndex; i++ )
+			subscriberList[ i ].update();
 	}
+
+
 }
