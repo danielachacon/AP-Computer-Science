@@ -13,9 +13,6 @@ package unit12.lab2;
  * When you try to synchronize over a null object.
  */
 
-/*
- * 
- */
 public class NullPointerExceptionCatch {
 
 	public static void main(String[] args) 
