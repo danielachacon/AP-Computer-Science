@@ -34,8 +34,11 @@ public class BubbleSort
 	public static void main(String[] args)
 	{
 		int array[] = {2,1,3,10,6,5,7,9,8,4};
+		System.out.print("Array: " );
+		for(int i = 0; i < array.length; i++)
+			System.out.print(array[i] + " ");
 		bubbleSort(array);
-		System.out.print("Array Sorted: " );
+		System.out.print("\nArray Sorted: " );
 		for(int i = 0; i < array.length; i++)
 			System.out.print(array[i] + " ");
 			
