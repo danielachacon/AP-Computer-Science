@@ -30,7 +30,7 @@ public class Palindrome
 	 * and every iteration it sees if the pair of indexes holds the same character
 	 * 
 	 * Preconditions: letters of the alphabet must be lowercase and i must start at 0 and will always be >= 0
-	 * Postconditions: Will always return true or false, i will always be less than c.length
+	 * Postconditions: Will always return true or false
 	 * @param c
 	 * @param i
 	 * @return	Whether the string is a palindrome as a Boolean
