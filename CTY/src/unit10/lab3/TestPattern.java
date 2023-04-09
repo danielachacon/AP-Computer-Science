@@ -8,12 +8,14 @@ public class TestPattern
 		MySubscriber aSubscriber = new MySubscriber();
 		MySubscriber bSubscriber = new MySubscriber();
 		MySubscriber cSubscriber = new MySubscriber();
-		MyPublisher aPublisher = new MyPublisher( 3 );
+		MySubscriber dSubscriber = new MySubscriber();
+		MyPublisher aPublisher = new MyPublisher( 6 );
 
 		// Register a Subscriber
 		aPublisher.register( aSubscriber );
 		aPublisher.register( bSubscriber );
 		aPublisher.register( cSubscriber );
+		aPublisher.register( dSubscriber );
 
 		// Increment Publisher object to cause state changes
 		aPublisher.increment();

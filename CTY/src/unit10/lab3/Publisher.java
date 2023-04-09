@@ -26,7 +26,15 @@ public class Publisher
 	public void notifySubscribers()
 	{
 		// Iterate through the subscriber array & invoke update() methods
-		for ( int i = 0; i < nextIndex; i++ )
-			subscriberList[ i ].update(i + 1);
+		if(maximumSubscribers < 3)
+		{
+			for ( int i = 0; i < maximumSubscribers; i++ )
+				subscriberList[ i ].update(i + 1);
+		}
+		else
+		{
+			for(int i = 0; i < 3; i++)
+				subscriberList[ i ].update(i + 1);
+		}
 	}
 }
