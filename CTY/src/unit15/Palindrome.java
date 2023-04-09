@@ -21,7 +21,7 @@ public class Palindrome
 		char[] c = new char[s.length()];
 		c = s.toLowerCase().toCharArray();
 		
-		return testPalindrome(c, 0);
+		return testPalindrome(c, 0, c.length - 1);
 	}
 	
 	/***
@@ -35,18 +35,22 @@ public class Palindrome
 	 * @param i
 	 * @return	Whether the string is a palindrome as a Boolean
 	 */
-	public static Boolean testPalindrome(char[] c, int i)
+	public static Boolean testPalindrome(char[] c, int i, int j)
 	{
-		if(i >= c.length - (i + 1))	//If the indexes are the same or past each other, then the pair of indexes have already been checked and are the same so it is a palindrome
+		if(i >= j)	//If the indexes are the same or past each other, then the pair of indexes have already been checked and are the same so it is a palindrome
 			 return true;
-		else if(c[i] != c[c.length - (i + 1)])	//If the character at the two indexes don't match up, then the String cannot be a palindrome
+		else if(c[i] < 'a' || c[i] > 'z')
+			return testPalindrome(c,++i, j);
+		else if(c[j] < 'a' || c[j] > 'z')	//Checks for anything noncharacter (ex: punctuation, colons, spaces)
+			return testPalindrome(c, i, --j);
+		else if(c[i] != c[j])	//If the character at the two indexes don't match up, then the String cannot be a palindrome
 			return false;
 		
-		return testPalindrome(c,++i);	//Call the function again and move the indexes one step towards their respective opposite end of the array
+		return testPalindrome(c,++i, --j);	//Call the function again and move the indexes one step towards their respective opposite end of the array
 	}
 	
 	public static void main(String[] args) 
 	{
-		System.out.print(testPalindrome("HelleH"));
+		System.out.print(testPalindrome("A man a plan a canal: Panama!"));
 	}
 }
