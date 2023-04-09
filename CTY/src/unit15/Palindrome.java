@@ -33,6 +33,7 @@ public class Palindrome
 	 * Postconditions: Will always return true or false
 	 * @param c
 	 * @param i
+	 * @param j
 	 * @return	Whether the string is a palindrome as a Boolean
 	 */
 	public static Boolean testPalindrome(char[] c, int i, int j)
@@ -51,6 +52,8 @@ public class Palindrome
 	
 	public static void main(String[] args) 
 	{
-		System.out.print(testPalindrome("A man a plan a canal: Panama!"));
+		System.out.println("Is \"A man a plan a canal: Panama!\" a Palindrome?: " + testPalindrome("A man a plan a canal: Panama!"));
+		System.out.println("Is \"radar\" a Palindrome?: " + testPalindrome("radar"));
+		System.out.println("Is \"max\" a Palindrome?: " + testPalindrome("max"));
 	}
 }
