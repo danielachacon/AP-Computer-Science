@@ -17,16 +17,29 @@ public class NullPointerExceptionCatch {
 
 	public static void main(String[] args) 
 	{
-		// example 1: invoking a method of a null object
-		String s = null;
+		System.out.println("NullPointerExceptionCatch compares a given string with the word hello. It will throw NullPointerException when the given String is null");
+		System.out.println("Test argument values:");
+		
+		
 		NullPointerExceptionThrown test = new NullPointerExceptionThrown();
 		try
 		{
-			test.NullPointerMethod(s);
+			System.out.println("\nPassing the value world");
+			test.compare("world");
 		}
 		catch(NullPointerException e)
 		{
-			System.out.print("s cannot be null! Exception: " + e);
+			System.out.print("ERROR: s cannot be null!\nException: " + e);
+		}
+		
+		try
+		{
+			System.out.println("\nPassing the value null");
+			test.compare(null);
+		}
+		catch(NullPointerException e)
+		{
+			System.out.print("ERROR: s cannot be null!\nException: " + e);
 		}
 
 	}

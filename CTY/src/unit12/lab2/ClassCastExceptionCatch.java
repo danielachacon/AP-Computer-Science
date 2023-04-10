@@ -10,15 +10,40 @@ public class ClassCastExceptionCatch {
 
 	public static void main(String[] args)
 	{
+		ClassCastExceptionThrown test = new ClassCastExceptionThrown();
+
+		System.out.println("ClassCastExceptionCatch allows you to set the value of Parent and Child objects");
+		System.out.println("Test setting of Parent and Child objects:");
+
+		Parent p = new Parent("Dad");
+		Child c = new Child("Daniel");
+
 		try
 		{
-			ClassCastExceptionThrown test = new ClassCastExceptionThrown();
-			test.ClassCastExceptionMethod();
-			System.out.print("It Works!");
+			System.out.println("\nSetting Parent as Child Object");
+
+			Parent newp = new Parent("Mom");
+			test.setChild(newp); // pass Parent to setChild method which is not compatible with Child object
+			
+			System.out.print("SUCCESS: Assign Mom as a new Child.");
 		}
 		catch(ClassCastException e)
 		{
-			System.out.print("Parent cannot be cast to Child!\nException : " + e);
+			System.out.print("ERROR: Parent Mom cannot be cast to Child!\nException : " + e + "\n");
+		}
+
+		System.out.println("\nSetting Child as Parent Object");
+		try
+		{
+			
+			Child newc = new Child("Kyla");
+			test.setParent(newc); // pass Child Object to setParent method. Since Child extends to Parent, then Child Kyla can be assigned to Parent Object
+			
+			System.out.print("SUCCESS: Assign Kyla as a new Parent.");
+		}
+		catch(ClassCastException e)
+		{
+			System.out.print("ERROR: Child Kyla cannot be cast to Parent!\nException : " + e);
 		}
 
 	}

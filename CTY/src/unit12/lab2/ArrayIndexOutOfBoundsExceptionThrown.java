@@ -2,10 +2,31 @@ package unit12.lab2;
 
 public class ArrayIndexOutOfBoundsExceptionThrown 
 {
-	public void ArrayIndexOutOfBoundsExceptionMethod(int[] myArray,  int index) throws ArrayIndexOutOfBoundsException
+	int[] arr;
+	int maxSize = 0;
+	
+	
+
+	public ArrayIndexOutOfBoundsExceptionThrown(int maxSize) {
+		super();	
+		this.maxSize = maxSize;
+		this.arr = new int[maxSize];
+		
+		System.out.print("Initializing content of an array with maxSize = " + maxSize + "\n");
+		for (int i=0; i< maxSize; i++) 
+			this.arr[i] = i+1;
+	}
+
+
+	/**
+	 * Preconditions: index is an integer > 0
+	 * Postconditions: Array is printed or exception is thrown
+	 * @param index
+	 */
+	public void ArrayIndexOutOfBoundsExceptionMethod(int index) throws ArrayIndexOutOfBoundsException
 	{
-		myArray[index] = 10;	//Array index is 0-9
-		System.out.print("Success!");
+		arr[index] = 100;	// assign 100 to the array index-th element
+		System.out.print("Assigning arr[" + index + "] with value 100");
 	}
 
 }
